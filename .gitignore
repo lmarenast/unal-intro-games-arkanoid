@@ -1,3 +1,5 @@
+# Ignoremos estos archivos
+
 Library/
 .vscode/
 Logs/
