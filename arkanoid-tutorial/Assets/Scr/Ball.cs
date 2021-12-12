@@ -58,5 +58,19 @@ public class Ball : MonoBehaviour
         }
 
         _rb.velocity = velocity;
+
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        BlockTile blockTileHit;
+        if (!other.collider.TryGetComponent(out blockTileHit))
+        {
+            return;
+        }
+
+        ContactPoint2D contactPoint = other.contacts[0];
+        blockTileHit.OnHitCollision(contactPoint);
     }
 }
