@@ -31,7 +31,17 @@ public class GridController : MonoBehaviour
         BuildGrid();
     }
     
-    
+    public BlockTile GetBlockBy(int id)
+    {
+        if (_blockTiles.TryGetValue(id, out BlockTile block))
+        {
+            return block;
+        }
+
+        return null;
+    }
+
+
     private void BuildGrid()
     {
         int id = 0;

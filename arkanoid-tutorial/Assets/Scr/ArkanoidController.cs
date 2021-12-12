@@ -15,7 +15,7 @@ public class ArkanoidController : MonoBehaviour
     private List<LevelData> _levels = new List<LevelData>();
     
     private int _currentLevel = 0;
-
+    private int _totalScore = 0;
     private Ball _ballPrefab = null;
     private List<Ball> _balls = new List<Ball>();
     
@@ -43,7 +43,7 @@ public class ArkanoidController : MonoBehaviour
     private void InitGame()
     {
         _currentLevel = 0;
-        
+        _totalScore = 0;
         _gridController.BuildGrid(_levels[0]);
         SetInitialBall();
     }
@@ -100,6 +100,13 @@ public class ArkanoidController : MonoBehaviour
     
     private void OnBlockDestroyed(int blockId)
     {
+
+        BlockTile blockDestroyed = _gridController.GetBlockBy(blockId);
+        if (blockDestroyed != null)
+        {
+            _totalScore += blockDestroyed.Score;
+        }
+        
         if (_gridController.GetBlocksActive() == 0)
         {
             _currentLevel++;
