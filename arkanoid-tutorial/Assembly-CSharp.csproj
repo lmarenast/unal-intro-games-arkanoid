@@ -37,8 +37,10 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scr\Ball.cs" />
+     <Compile Include="Assets\Scr\Grid\BlockTile.cs" />
      <Compile Include="Assets\Scr\Paddle.cs" />
-     <Compile Include="Assets\Scr\BlockTile.cs" />
+     <Compile Include="Assets\Scr\Grid\GridController.cs" />
+     <Compile Include="Assets\Scr\Grid\LevelData.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
