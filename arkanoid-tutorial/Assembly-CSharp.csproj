@@ -39,13 +39,14 @@
      <Compile Include="Assets\Scr\Ball.cs" />
      <Compile Include="Assets\Scr\Grid\BlockTile.cs" />
      <Compile Include="Assets\Scr\Grid\LevelData.cs" />
+     <Compile Include="Assets\Scr\UI\UIMenu.cs" />
      <Compile Include="Assets\Scr\ArkanoidController.cs" />
+     <Compile Include="Assets\Scr\UI\UILevelScore.cs" />
      <Compile Include="Assets\Scr\Events\ArkanoidEvent.cs" />
      <Compile Include="Assets\Scr\Grid\DeadZone.cs" />
      <Compile Include="Assets\Scr\Grid\GridController.cs" />
      <Compile Include="Assets\Scr\Paddle.cs" />
-     <Compile Include="Assets\Scr\UI\UILevelScore.cs" />
-     <Compile Include="Assets\Scr\UI\UIMenu.cs" />
+     <Compile Include="Assets\Scr\PowerUps\PowerUp.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

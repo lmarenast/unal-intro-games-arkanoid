@@ -868,6 +868,7 @@ GameObject:
   - component: {fileID: 1013358871}
   - component: {fileID: 1013358872}
   - component: {fileID: 1013358873}
+  - component: {fileID: 1013358874}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -920,6 +921,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _movementLimit: 7
+--- !u!114 &1013358874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013358870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 283db657569d091408345772506ad0fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1214352426
 GameObject:
   m_ObjectHideFlags: 0

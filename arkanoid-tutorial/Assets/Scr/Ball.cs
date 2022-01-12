@@ -11,6 +11,7 @@ public class Ball : MonoBehaviour
     private float _minSpeed = 4;
     [SerializeField]
     private float _maxSpeed = 7;
+    public static float currentMultiplier = 1;
 
     private Rigidbody2D _rb;
     private Collider2D _collider;
@@ -76,5 +77,5 @@ public class Ball : MonoBehaviour
         blockTileHit.OnHitCollision(contactPoint);
     }
 
-    
+
 }
