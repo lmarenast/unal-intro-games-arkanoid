@@ -117,11 +117,11 @@ public class BlockTile : MonoBehaviour
             }
             else if(randomPUp<0.9f)
             {
-                Instantiate(Resources.Load<GameObject>("PowerUp250"),contactPoint.point,Quaternion.identity);
+                Instantiate(Resources.Load<GameObject>("Prefabs/PowerUp250"),contactPoint.point,Quaternion.identity);
             }
             else if(randomPUp<=1f)
             {
-                Instantiate(Resources.Load<GameObject>("PowerUp500"),contactPoint.point,Quaternion.identity);
+                Instantiate(Resources.Load<GameObject>("Prefabs/PowerUp500"),contactPoint.point,Quaternion.identity);
             }
                 
             }
